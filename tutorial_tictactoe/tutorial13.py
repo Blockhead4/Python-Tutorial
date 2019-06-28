@@ -28,7 +28,7 @@ def win(current_game):
         print(f"player {diags[0]} is the winner diagonally (\\)!")
 
     # Vertical
-    for col in range(len(game)):
+    for col in range(len(game)):    
         check = []
 
         for row in game:

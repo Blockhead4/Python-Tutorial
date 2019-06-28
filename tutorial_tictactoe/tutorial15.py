@@ -3,7 +3,7 @@ from colorama import Fore, Back, Style, init
 init()
 
 def win(current_game):
-
+    
     def all_same(l):
         if l.count(l[0]) == len(l) and l[0] != 0:
             return True
@@ -45,7 +45,6 @@ def win(current_game):
 
     return False
 
-
 def game_board(game_map, player=0, row=0, column=0, just_display=False):
     try:
         if game_map[row][column] != 0:
@@ -65,8 +64,6 @@ def game_board(game_map, player=0, row=0, column=0, just_display=False):
                     colored_row += Fore.MAGENTA + " O " + Style.RESET_ALL
             print(count, colored_row)
 
-
-
         return game_map, True
     
     except IndexError as e:
@@ -77,24 +74,23 @@ def game_board(game_map, player=0, row=0, column=0, just_display=False):
         print("Something went very wrong!", e)
         return game_map, False
 
-
 play = True
 players = [1, 2]
 while play:
-
     game_size = int(input("What size game of tic tac toe? "))
     game = [[0 for i in range(game_size)] for i in range(game_size)]
     game_won = False
     game, _ = game_board(game, just_display=True)
     player_choice = itertools.cycle([1, 2])
+
     while not game_won:
         current_player = next(player_choice)
         print(f"Current Player: {current_player}")
         played = False
 
         while not played:
-            column_choice = int(input("What column do you want to play? (0, 1, 2): "))
             row_choice = int(input("What row do you want to play? (0, 1, 2): "))
+            column_choice = int(input("What column do you want to play? (0, 1, 2): "))
             game, played = game_board(game, current_player, row_choice, column_choice)
 
         if win(game):

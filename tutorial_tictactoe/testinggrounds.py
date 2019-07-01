@@ -18,7 +18,7 @@
 # # print(tmp)
 
 
-# # print("   "+ "  ".join([str(i) for i in range(game_size)]))
+# print("   "+ "  ".join([str(i) for i in range(game_size)]))
 
 # players = [1, 0]
 # choice = 1

@@ -1,5 +1,3 @@
-filenames in os.walk(os.getcwd):
-#     print('Current path: ', dirpath)
-#     print('Directories: ', dirnames)
-#     print('Files: ', filenames)
-#     print()
+y', 'job' : 'programming', 'age' : None, 'os': 'Mac'}
+s_di = sorted(di)
+print('Dict\t', s_di

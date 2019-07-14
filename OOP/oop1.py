@@ -1,4 +1,4 @@
-# Python Objext-Oriented Programming
+# Python Object-Oriented Programming
 # First Classes
 class Employee:
     

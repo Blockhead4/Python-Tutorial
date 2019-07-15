@@ -1,3 +1,4 @@
+# Lab 1 basics
 # 1. TensorFlow Hello World!
 import tensorflow as tf
 

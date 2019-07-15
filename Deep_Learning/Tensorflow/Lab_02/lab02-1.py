@@ -1,3 +1,4 @@
+# Lab 2 Linear Regression
 # Build Simple Linear Regression using TensorFlow
 import tensorflow as tf
 

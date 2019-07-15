@@ -5,7 +5,8 @@ import tensorflow as tf
 tf.set_random_seed(777)  # for reproducibility
 
 filename_queue = tf.train.string_input_producer(
-    ['data-01-test-score.csv'], shuffle=False, name='filename_queue')
+    [r'C:\Users\Jwp\Desktop\workspace\python\Tutorial\Deep_Learning\Tensorflow\data\data-01-test-score.csv'],
+    shuffle=False, name='filename_queue')
 
 reader = tf.TextLineReader()
 key, value = reader.read(filename_queue)

@@ -37,5 +37,5 @@ print(sess.run(adder_node, feed_dict={a: [1,3], b: [2,4]}))
 # 3. Everything is Tensor
 # Tensor Ranks, Shapes, and Types
 # Rank = Dimension
-# Shape = Count of Elements
+# Shape = Count of Elements?
 # Type = Data Type

@@ -1,4 +1,4 @@
-# Lab 9 XOR-Back_Prop
+# Lab 9 XOR-NN-Back_Prop
 import tensorflow as tf
 import numpy as np
 

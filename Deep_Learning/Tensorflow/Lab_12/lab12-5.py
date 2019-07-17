@@ -46,7 +46,8 @@ learning_rate = 0.01
 iterations = 500
 
 # Open, High, Low, Volume, Close
-xy = np.loadtxt('data-02-stock_daily.csv', delimiter=',')
+xy = np.loadtxt(r'C:\Users\Jwp\Desktop\workspace\python\Tutorial\Deep_Learning\Tensorflow\data\data-02-stock_daily.csv',
+     delimiter=',')
 xy = xy[::-1]  # reverse order (chronically ordered)
 
 # train/test split

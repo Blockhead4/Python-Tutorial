@@ -11,8 +11,7 @@ filename_queue = tf.train.string_input_producer(
 reader = tf.TextLineReader()
 key, value = reader.read(filename_queue)
 
-# Default values, in case of empty columns. Also specifies the type of the
-# decoded result.
+# Default values, in case of empty columns. Also specifies the type of the decoded result.
 record_defaults = [[0.], [0.], [0.], [0.]]
 xy = tf.decode_csv(value, record_defaults=record_defaults)
 

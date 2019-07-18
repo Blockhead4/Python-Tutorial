@@ -1,9 +1,10 @@
-# Lab 4 Multi-variable linear regression
+# Lab 4 Multi-variable linear regression - Load Data from File
 import tensorflow as tf
 import numpy as np
 tf.set_random_seed(777)  # for reproducibility
 
 xy = np.loadtxt(r'C:\Users\Jwp\Desktop\workspace\python\Tutorial\Deep_Learning\Tensorflow\data\data-01-test-score.csv', delimiter=',', dtype=np.float32)
+
 x_data = xy[:, 0:-1]
 y_data = xy[:, [-1]]
 
@@ -36,8 +37,8 @@ sess.run(tf.global_variables_initializer())
 for step in range(2001):
     cost_val, hy_val, _ = sess.run([cost, hypothesis, train], 
                                    feed_dict={X: x_data, Y: y_data})
-    if step % 10 == 0:
-        print(step, "Cost:", cost_val, "\nPrediction:\n", hy_val)
+    # if step % 10 == 0:
+    #     print(step, "Cost:", cost_val, "\nPrediction:\n", hy_val)
 
 # Ask my score
 print("Your score will be ", sess.run(hypothesis, 

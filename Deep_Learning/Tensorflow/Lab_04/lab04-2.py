@@ -1,4 +1,4 @@
-# Lab 4 Multi-variable linear regression
+# Lab 4 Multi-variable linear regression - Matrix
 import tensorflow as tf
 tf.set_random_seed(777)  # for reproducibility
 
@@ -36,8 +36,8 @@ sess = tf.Session()
 # Initializes global variables in the graph.
 sess.run(tf.global_variables_initializer())
 
-for step in range(2001):
+for step in range(5001):
     cost_val, hy_val, _ = sess.run(
         [cost, hypothesis, train], feed_dict={X: x_data, Y: y_data})
-    if step % 10 == 0:
+    if step % 100 == 0:
         print(step, "Cost: ", cost_val, "\nPrediction:\n", hy_val)

@@ -11,8 +11,8 @@ sess = tf.InteractiveSession()
 # 1. Simple Array
 # t = np.array([0., 1., 2., 3., 4., 5., 6.])
 # pp.pprint(t)
-# t.ndim) # ran
-# t.shape) # shap
+# t.ndim # rank
+# t.shape # shape
 # t[0], t[1], t[-1]
 # t[2:5], t[4:-1]
 # t[:2], t[3:]
@@ -20,8 +20,8 @@ sess = tf.InteractiveSession()
 # 2. 2D Array
 # t = np.array([[1., 2., 3.], [4., 5., 6.], [7., 8., 9.], [10., 11., 12.]])
 # pp.pprint(t)
-# t.ndim) # ran
-# t.shape) # shap
+# t.ndim # rank
+# t.shape # shape
 
 # 3. Shape, Rank, Axis
 # t = tf.constant([1,2,3,4])
@@ -54,7 +54,7 @@ sess = tf.InteractiveSession()
 # matrix2 = tf.constant([[2.],[2.]])
 # tf.matmul(matrix1, matrix2).eval()
 
-# matrix1*matrix2).eval()
+# (matrix1*matrix2).eval()
 
 # 5. Watch out broadcasting
 # matrix1 = tf.constant([[3., 3.]])
